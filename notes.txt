@@ -1,0 +1,48 @@
+Case:
+    Grid: 3 1
+    Initial location and position: 1 1 E
+    rover moves 1 square EAST
+
+Case:
+    Grid: 3 1
+    Initial location and position: 1 1 E
+    rover moves 2 squares EAST
+
+Case:
+    Grid: 3 1
+    Initial location and position: 1 1 E
+    rover moves 2 squares EAST
+    rover move 1 square EAST and wraps around
+
+Case:
+    Grid: 3 1
+    Initial location and position: 3 1 W
+    rover moves WEST until wrap around
+
+Case:
+    Grid: 1 3
+    Initial location and position: 1 1 N
+    rover moves 1 square NORTH
+
+Case:
+    Grid: 1 3
+    Initial location and position: 1 1 N
+    rover moves 2 squares NORTH
+
+Case:
+    Grid: 1 3
+    Initial location and position: 1 1 N
+    rover moves 2 squares NORTH
+    rover moves 1 square NORTH and wraps around
+
+Case:
+    Grid: 1 3
+    Initial location and position: 1 3 S
+    rover moves SOUTH until wrap around
+
+Case:
+    Grid: 3 3
+    Initial location and position: 1 1 E
+    rover moves 1 square EAST
+    rover moves 1 squares NORTH
+    rover moves 1 squares WEST
