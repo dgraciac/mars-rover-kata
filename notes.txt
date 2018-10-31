@@ -49,8 +49,10 @@ Case:
     Final location and position: 1 3 S
 
 Case:
-    Grid: 3 3
-    Initial location and position: 1 1 E
+    Grid: 4 2
+    Initial location and position: 2 1 E
     rover moves 1 square EAST
     rover moves 1 squares NORTH
     rover moves 1 squares WEST
+    rover moves 1 squares SOUTH
+    Final location and position: 1 3 S
