@@ -1,3 +1,7 @@
+Handle value 0 for co-ordinates inside Location
+
+-----------------------
+
 Case:
     Grid: 3 1
     Initial location and position: 1 1 E

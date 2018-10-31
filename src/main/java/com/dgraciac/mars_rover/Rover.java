@@ -5,12 +5,12 @@ public class Rover {
 
     }
 
-    public String location() {
-        return "E";
+    public Location location() {
+        return new Location(2, 1);
     }
 
-    public String position() {
-        return "2 1";
+    public Position position() {
+        return Position.EAST;
     }
 
     public void move() {

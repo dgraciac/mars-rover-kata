@@ -18,7 +18,8 @@ public class RoverShould {
 
         rover.move();
 
-        assertThat(rover.position()).isEqualTo("2 1");
-        assertThat(rover.location()).isEqualTo("E");
+        assertThat(rover.location()).isEqualTo(new Location(2, 1));
+        assertThat(rover.position()).isEqualTo(Position.EAST);
     }
+
 }
