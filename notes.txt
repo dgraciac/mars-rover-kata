@@ -49,6 +49,13 @@ Case:
     Final location and position: 1 3 S
 
 Case:
+    Grid: 3 3
+    Initial location and position: 1 1 N
+    rover turns right
+    rover moves EAST 1 square
+    Final location and position: 1 1 E
+
+Case:
     Grid: 4 2
     Initial location and position: 2 1 E
     rover moves 1 square EAST
