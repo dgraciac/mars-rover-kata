@@ -11,12 +11,24 @@ public class Location {
         this.y = y;
     }
 
-    void increaseXBy1() {
+    void increaseXByOne() {
         x += 1;
     }
 
     int x() {
         return x;
+    }
+
+    void setMinimumValueForX() {
+        x = 1;
+    }
+
+    void decreaseXByOne() {
+        x -= 1;
+    }
+
+    void setValueForX(int newValue) {
+        x = newValue;
     }
 
     @Override
@@ -39,9 +51,5 @@ public class Location {
                 "x=" + x +
                 ", y=" + y +
                 '}';
-    }
-
-    void setMinimumValueForX() {
-        x = 1;
     }
 }

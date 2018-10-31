@@ -16,11 +16,16 @@ public class Rover {
     }
 
     public Position position() {
-        return Position.EAST;
+        return position;
     }
 
     public void move() {
-        if(location.x() == gridDimensions.width()) location.setMinimumValueForX();
-        else location.increaseXBy1();
+        if(position.equals(Position.EAST)) {
+            if(location.x() == gridDimensions.width()) location.setMinimumValueForX();
+            else location.increaseXByOne();
+        } else {
+            if(location.x() == 1) location.setValueForX(gridDimensions.width());
+            else location.decreaseXByOne();
+        }
     }
 }

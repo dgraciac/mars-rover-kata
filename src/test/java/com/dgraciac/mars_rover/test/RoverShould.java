@@ -63,4 +63,22 @@ public class RoverShould {
         assertThat(rover.position()).isEqualTo(Position.EAST);
     }
 
+    @Test
+    public void be_at_3_1_E_when_grid_is_3_1_and_rover_starts_3_1_W_and_it_moves_WEST_until_wraps_around() {
+        int width = 3;
+        int height = 1;
+        GridDimensions gridDimensions = new GridDimensions(width, height);
+        int x = 3;
+        int y = 1;
+        Location initialLocation = new Location(x,y);
+        Position initialPosition = Position.WEST;
+        Rover rover = new Rover(gridDimensions, initialLocation, initialPosition);
+
+        rover.move();
+        rover.move();
+        rover.move();
+
+        assertThat(rover.location()).isEqualTo(new Location(3, 1));
+        assertThat(rover.position()).isEqualTo(Position.WEST);
+    }
 }

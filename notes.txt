@@ -19,11 +19,13 @@ Case:
     Initial location and position: 1 1 E
     rover moves 2 squares EAST
     rover move 1 square EAST and wraps around
+    Final location and position: 1 1 E
 
 Case:
     Grid: 3 1
     Initial location and position: 3 1 W
     rover moves WEST until wrap around
+    Final location and position: 3 1 W
 
 Case:
     Grid: 1 3
