@@ -6,48 +6,7 @@ Pending tasks:
 
 -----------------------
 
-Case:
-    Grid: 3 1
-    Initial location and position: 1 1 E
-    rover moves 1 square EAST
-    Final location and position: 2 1 E
-
-Case:
-    Grid: 3 1
-    Initial location and position: 1 1 E
-    rover moves 2 squares EAST
-    Final location and position: 3 1 E
-
-Case:
-    Grid: 3 1
-    Initial location and position: 1 1 E
-    rover moves 2 squares EAST
-    rover move 1 square EAST and wraps around
-    Final location and position: 1 1 E
-
-Case:
-    Grid: 3 1
-    Initial location and position: 3 1 W
-    rover moves WEST until wrap around
-    Final location and position: 3 1 W
-
-Case:
-    Grid: 1 3
-    Initial location and position: 1 1 N
-    rover moves 1 square NORTH
-    Final location and position: 1 2 N
-
-Case:
-    Grid: 1 3
-    Initial location and position: 1 3 N
-    rover moves 1 square NORTH and wraps around
-    Final location and position: 1 1 N
-
-Case:
-    Grid: 1 3
-    Initial location and position: 1 3 S
-    rover moves SOUTH until wraps around
-    Final location and position: 1 3 S
+Pending cases:
 
 Case:
     Grid: 3 3
