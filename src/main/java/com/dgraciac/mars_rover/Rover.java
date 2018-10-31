@@ -23,9 +23,11 @@ public class Rover {
         if(position.equals(Position.EAST)) {
             if(location.x() == gridDimensions.width()) location.setMinimumValueForX();
             else location.increaseXByOne();
-        } else {
+        } else if (position.equals(Position.WEST)){
             if(location.x() == 1) location.setValueForX(gridDimensions.width());
             else location.decreaseXByOne();
+        } else {
+            location.increaseYByOne();
         }
     }
 }

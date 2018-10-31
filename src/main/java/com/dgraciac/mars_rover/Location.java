@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Location {
     private int x;
-    private final int y;
+    private int y;
 
     public Location(int x, int y) {
         this.x = x;
@@ -29,6 +29,10 @@ public class Location {
 
     void setValueForX(int newValue) {
         x = newValue;
+    }
+
+    void increaseYByOne() {
+        y += 1;
     }
 
     @Override
