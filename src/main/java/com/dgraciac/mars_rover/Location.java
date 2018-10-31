@@ -3,12 +3,16 @@ package com.dgraciac.mars_rover;
 import java.util.Objects;
 
 public class Location {
-    private final int x;
+    private int x;
     private final int y;
 
     public Location(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    void increaseXBy1() {
+        x += 1;
     }
 
     @Override
