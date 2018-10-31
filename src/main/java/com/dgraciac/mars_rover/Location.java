@@ -15,6 +15,10 @@ public class Location {
         x += 1;
     }
 
+    int x() {
+        return x;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -35,5 +39,9 @@ public class Location {
                 "x=" + x +
                 ", y=" + y +
                 '}';
+    }
+
+    void setMinimumValueForX() {
+        x = 1;
     }
 }

@@ -20,6 +20,7 @@ public class Rover {
     }
 
     public void move() {
-        location.increaseXBy1();
+        if(location.x() == gridDimensions.width()) location.setMinimumValueForX();
+        else location.increaseXBy1();
     }
 }
