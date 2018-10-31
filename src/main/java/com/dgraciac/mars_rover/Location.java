@@ -35,6 +35,14 @@ public class Location {
         y += 1;
     }
 
+    int y() {
+        return y;
+    }
+
+    void setMinimumValueForY() {
+        y = 1;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

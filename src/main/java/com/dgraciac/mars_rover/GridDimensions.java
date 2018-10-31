@@ -8,4 +8,8 @@ public class GridDimensions {
     int width() {
         return 3;
     }
+
+    int height() {
+        return 3;
+    }
 }

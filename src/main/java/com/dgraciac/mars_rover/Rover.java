@@ -27,7 +27,8 @@ public class Rover {
             if(location.x() == 1) location.setValueForX(gridDimensions.width());
             else location.decreaseXByOne();
         } else {
-            location.increaseYByOne();
+            if(location.y() == gridDimensions.height()) location.setMinimumValueForY();
+            else location.increaseYByOne();
         }
     }
 }

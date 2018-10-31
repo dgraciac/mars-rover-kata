@@ -98,4 +98,21 @@ public class RoverShould {
         assertThat(rover.location()).isEqualTo(new Location(1, 2));
         assertThat(rover.position()).isEqualTo(Position.NORTH);
     }
+
+    @Test
+    public void be_at_1_1_N_when_grid_is_1_3_and_rover_starts_1_3_N_and_it_moves_1_square_NORTH() {
+        int width = 1;
+        int height = 3;
+        GridDimensions gridDimensions = new GridDimensions(width, height);
+        int x = 1;
+        int y = 3;
+        Location initialLocation = new Location(x,y);
+        Position initialPosition = Position.NORTH;
+        Rover rover = new Rover(gridDimensions, initialLocation, initialPosition);
+
+        rover.move();
+
+        assertThat(rover.location()).isEqualTo(new Location(1, 1));
+        assertThat(rover.position()).isEqualTo(Position.NORTH);
+    }
 }

@@ -35,14 +35,9 @@ Case:
 
 Case:
     Grid: 1 3
-    Initial location and position: 1 1 N
-    rover moves 2 squares NORTH
-
-Case:
-    Grid: 1 3
-    Initial location and position: 1 1 N
-    rover moves 2 squares NORTH
+    Initial location and position: 1 3 N
     rover moves 1 square NORTH and wraps around
+    Final location and position: 1 1 N
 
 Case:
     Grid: 1 3
