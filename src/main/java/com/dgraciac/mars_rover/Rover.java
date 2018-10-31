@@ -3,7 +3,7 @@ package com.dgraciac.mars_rover;
 public class Rover {
     private final GridDimensions gridDimensions;
     private final Location location;
-    private final Position position;
+    private Position position;
 
     public Rover(GridDimensions gridDimensions, Location initialLocation, Position initialPosition) {
         this.gridDimensions = gridDimensions;
@@ -33,5 +33,12 @@ public class Rover {
             if(location.y() == 1) location.setValueForY(gridDimensions.height());
             else location.decreaseYByOne();
         }
+    }
+
+    public void turnRight() {
+        if(position.equals(Position.NORTH)) position = Position.EAST;
+        else if(position.equals(Position.EAST)) position = Position.SOUTH;
+        else if(position.equals(Position.SOUTH)) position = Position.WEST;
+        else position = Position.NORTH;
     }
 }

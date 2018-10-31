@@ -3,7 +3,7 @@ Pending tasks:
 - Refactor tests: do the minimum work for test cases
 - Handle value 0 for co-ordinates inside Location
 - Test grids with different dimensions
-
+- rover.position -> rover.isFacingNorth, rover.isFacingEast,...
 -----------------------
 
 Pending cases:
@@ -13,7 +13,7 @@ Case:
     Initial location and position: 1 1 N
     rover turns right
     rover moves EAST 1 square
-    Final location and position: 1 1 E
+    Final location and position: 2 1 E
 
 Case:
     Grid: 4 2
