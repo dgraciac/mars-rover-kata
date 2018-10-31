@@ -26,9 +26,12 @@ public class Rover {
         } else if (position.equals(Position.WEST)){
             if(location.x() == 1) location.setValueForX(gridDimensions.width());
             else location.decreaseXByOne();
-        } else {
+        } else if (position.equals(Position.NORTH)){
             if(location.y() == gridDimensions.height()) location.setMinimumValueForY();
             else location.increaseYByOne();
+        } else {
+            if(location.y() == 1) location.setValueForY(gridDimensions.height());
+            else location.decreaseYByOne();
         }
     }
 }

@@ -1,4 +1,7 @@
-Handle value 0 for co-ordinates inside Location
+Pending tasks:
+
+- Handle value 0 for co-ordinates inside Location
+- Test grids with different dimensions
 
 -----------------------
 
@@ -42,7 +45,8 @@ Case:
 Case:
     Grid: 1 3
     Initial location and position: 1 3 S
-    rover moves SOUTH until wrap around
+    rover moves SOUTH until wraps around
+    Final location and position: 1 3 S
 
 Case:
     Grid: 3 3
