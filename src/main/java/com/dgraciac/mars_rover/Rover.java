@@ -1,7 +1,7 @@
 package com.dgraciac.mars_rover;
 
 public class Rover {
-    public Rover(Grid grid, Location initialLocation, Position initialPosition) {
+    public Rover(GridDimensions gridDimensions, Location initialLocation, Position initialPosition) {
 
     }
 
