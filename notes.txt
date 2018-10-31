@@ -1,5 +1,6 @@
 Pending tasks:
 
+- Refactor tests: do the minimum work for test cases
 - Handle value 0 for co-ordinates inside Location
 - Test grids with different dimensions
 
