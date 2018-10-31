@@ -41,4 +41,11 @@ public class Rover {
         else if(position.equals(Position.SOUTH)) position = Position.WEST;
         else position = Position.NORTH;
     }
+
+    public void turnLeft() {
+        if(position.equals(Position.EAST)) position = Position.NORTH;
+        else if(position.equals(Position.SOUTH)) position = Position.EAST;
+        else if(position.equals(Position.WEST)) position = Position.SOUTH;
+        else position = Position.WEST;
+    }
 }

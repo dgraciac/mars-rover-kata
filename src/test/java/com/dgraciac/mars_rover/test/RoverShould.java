@@ -148,6 +148,21 @@ public class RoverShould {
         assertThat(rover.position()).isEqualTo(finalPosition);
     }
 
+    @Test
+    @Parameters({
+            "EAST,NORTH",
+            "SOUTH,EAST",
+            "WEST,SOUTH",
+            "NORTH,WEST"
+    })
+    public void turn_left_correctly(Position initialPosition, Position finalPosition) {
+        Rover rover = new Rover(new GridDimensions(1, 1), new Location(1, 1), initialPosition);
+
+        rover.turnLeft();
+
+        assertThat(rover.position()).isEqualTo(finalPosition);
+    }
+
     /*@Test
     public void be_at_2_1_E_when_grid_is_3_3_and_rover_starts_1_1_N_and_turns_right_and_moves_EAST() {
         int width = 1;
