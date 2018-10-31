@@ -2,6 +2,7 @@ Case:
     Grid: 3 1
     Initial location and position: 1 1 E
     rover moves 1 square EAST
+    Final location and position: 2 1 E
 
 Case:
     Grid: 3 1
