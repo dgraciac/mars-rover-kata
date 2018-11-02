@@ -1,9 +1,6 @@
 package com.dgraciac.mars_rover.test;
 
-import com.dgraciac.mars_rover.GridDimensions;
-import com.dgraciac.mars_rover.Location;
-import com.dgraciac.mars_rover.Position;
-import com.dgraciac.mars_rover.Rover;
+import com.dgraciac.mars_rover.*;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;
@@ -148,19 +145,23 @@ public class RoverShould {
         assertThat(rover.position()).isEqualTo(finalPosition);
     }
 
+    private Object[] turnLeftParameters() {
+        return new Object[][]{
+                {new NorthState(), new WestState()},
+                {new SouthState(), new EastState()},
+                {new WestState(), new SouthState()},
+                {new EastState(), new NorthState()}
+        };
+    }
+
     @Test
-    @Parameters({
-            "EAST,NORTH",
-            "SOUTH,EAST",
-            "WEST,SOUTH",
-            "NORTH,WEST"
-    })
-    public void turn_left_correctly(Position initialPosition, Position finalPosition) {
-        Rover rover = new Rover(new GridDimensions(1, 1), new Location(1, 1), initialPosition);
+    @Parameters(method = "turnLeftParameters")
+    public void turn_left_correctly(State initialState, State finalState) {
+        Rover rover = new Rover(new GridDimensions(1, 1), new Location(1, 1), initialState);
 
         rover.turnLeft();
 
-        assertThat(rover.position()).isEqualTo(finalPosition);
+        assertThat(rover.getState()).isEqualTo(finalState);
     }
 
     /*@Test

@@ -5,6 +5,22 @@ public class Rover {
     private final Location location;
     private Position position;
 
+    private State westState;
+    private State state;
+    private State eastState;
+    private State northState;
+    private State southState;
+
+    public Rover(GridDimensions gridDimensions, Location initialLocation, State initialState) {
+        this.gridDimensions = gridDimensions;
+        this.location = initialLocation;
+        this.state = initialState;
+        this.westState = new WestState();
+        this.eastState = new EastState();
+        this.northState = new NorthState();
+        this.southState = new SouthState();
+    }
+
     public Rover(GridDimensions gridDimensions, Location initialLocation, Position initialPosition) {
         this.gridDimensions = gridDimensions;
         this.location = initialLocation;
@@ -43,9 +59,30 @@ public class Rover {
     }
 
     public void turnLeft() {
-        if(position.equals(Position.EAST)) position = Position.NORTH;
-        else if(position.equals(Position.SOUTH)) position = Position.EAST;
-        else if(position.equals(Position.WEST)) position = Position.SOUTH;
-        else position = Position.WEST;
+        state.turnLeft(this);
+    }
+
+    State getWestState() {
+        return westState;
+    }
+
+    void setState(State state) {
+        this.state = state;
+    }
+
+    State getEastState() {
+        return eastState;
+    }
+
+    State getNorthState() {
+        return northState;
+    }
+
+    State getSouthState() {
+        return southState;
+    }
+
+    public State getState() {
+        return state;
     }
 }
